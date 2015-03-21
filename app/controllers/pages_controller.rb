@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   def about
   end
 
-  def pictures
+  def pay_me
   end
   
 end
