@@ -44,7 +44,7 @@ function handleImageError() {
     $('img').each(function(){
         imgPath = $(this).attr('src');
         if(!imgExists(imgPath)){
-            $(this).attr('src', 'images/noimage.jpg');
+            $(this).attr('src', 'http://images4.wikia.nocookie.net/__cb20130213200641/destiny2579/images/b/b1/Delete_Icon.png');
         }
     });
 }
