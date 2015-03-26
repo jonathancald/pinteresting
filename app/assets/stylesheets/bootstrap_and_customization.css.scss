@@ -28,23 +28,3 @@ $jumbotron-bg: #bdc3c7;
   margin-left: auto;
   margin-right: auto;
 }
-
-function imgExists(imgPath) {
-  var http = jQuery.ajax({
-                type:"HEAD",
-        url: imgPath,
-        async: false
-          });
-  return http.status!=404;
-}
-
-function handleImageError() {
-    var imgPath;
-
-    $('img').each(function(){
-        imgPath = $(this).attr('src');
-        if(!imgExists(imgPath)){
-            $(this).attr('src', 'http://images4.wikia.nocookie.net/__cb20130213200641/destiny2579/images/b/b1/Delete_Icon.png');
-        }
-    });
-}
